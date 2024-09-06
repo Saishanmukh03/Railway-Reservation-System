@@ -1,0 +1,139 @@
+/* Center the entire content of the page */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header li{
+    display: inline-block;
+}
+header{
+    background-color: white;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.links ul {
+    display: flex; 
+    align-items: center;
+    gap: 30px; 
+    padding-right: 30px;
+}
+.links li {
+    font-size: 20px;
+    cursor: pointer;
+}
+.links li:hover {
+    scale: 1.1;
+}
+#activepage{
+    background-color: navy;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+a{
+    color: navy;
+}
+img{
+    width: 80px;
+    height: 80px;
+}
+
+
+/* Style the main container for booking details */
+.booking-details {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the left side (train details) */
+.train-details {
+    flex: 1; /* Takes up all available space on the left */
+    padding: 10px;
+    border-right: 1px solid #ccc;
+}
+
+/* Style the right side (passenger details) */
+.passenger-details {
+    flex: 1; /* Takes up all available space on the right */
+    padding: 10px;
+}
+
+/* Style the form within passenger details */
+.passenger-details form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Center the submit button within the form */
+.passenger-details input[type="submit"] {
+    display: block;
+    margin: 10px auto;
+}
+
+/* Style headers */
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style labels and inputs within the form */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    box-sizing: border-box;
+    
+}
+
+footer .left {
+    margin: 0;
+    font-size: 14px;
+    color: navy;
+}
+
+footer .right {
+    display: flex;
+    align-items: center;
+}
+
+footer .right a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: navy;
+}
